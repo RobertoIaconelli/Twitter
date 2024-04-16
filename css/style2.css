@@ -15,7 +15,7 @@ body{
     align-items: center;
     margin-top: 20rem;
     padding-bottom: 2rem;
-    padding-top: 3rem;
+    padding-top: 0.2rem;
 }
 
 h1{
@@ -80,17 +80,18 @@ h1{
 
 .UtenteCompleto{
     display: flex;
-    position: absolute;
-    margin-left: 31rem;
-    margin-top: 1rem;
+ 
+    margin-left: 20rem;
     justify-content: space-between;
     
     
+     
 }
 
 .UtenteCompleto p{
     margin-top: 1rem;
     margin-right: 1rem;
+    
 }
 
 .UtenteCompleto img{

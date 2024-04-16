@@ -52,7 +52,7 @@ function scalaCaratteri(){
            
         }
 
-        btnTweet.addEventListener("click", aggiungiTweet);
+        btnTweet.addEventListener("click", aggiungiTweet); 
         
         
         
