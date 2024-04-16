@@ -4,6 +4,7 @@ let btnLogin = document.querySelector("#bntRegistrati");
 let logoX = "./img/logouccellino.jpg";
 
 
+
 function controlloUsername() {
   const regex = /^.{4,15}$/; // Regex che corrisponde a stringhe di lunghezza tra 4 e 15 caratteri inclusi
   nickname = document.getElementById("nickname"); // Ottieni l'elemento input del nickname
@@ -49,6 +50,7 @@ function registraUtente(){
         // console.log(nickname, password);
         let nuovoUtente = new Utente(nickname.value, password.value,[]);
         localStorage.setItem("nuovoUtente", JSON.stringify(nuovoUtente));
+       
               
        
     }else{
@@ -59,10 +61,25 @@ function registraUtente(){
 let nicknameUtente = localStorage.getItem("nickname");
 
 
+//FUNZIONE X IMM. OCCHIO VISIBILITà PASSWORD
+function visibilitàPassword() {
+  let passwordInput = document.getElementById("password");
+  let eyeIcon = document.querySelector(".toggle-password i");
 
-  
+  if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.classList.remove("fa-eye-slash fa-solid");
+      eyeIcon.classList.add("fa-regular fa-eye");
+  } else {
+      passwordInput.type = "password";
+      eyeIcon.classList.remove("fa-regular fa-eye");
+      eyeIcon.classList.add("fa-eye-slash fa-solid"); 
+  }
+}
 
 
 
 btnLogin.addEventListener("click", registraUtente);
+
+
 

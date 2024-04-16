@@ -15,15 +15,17 @@ body{
     align-items: center;
     margin-top: 20rem;
     padding-bottom: 2rem;
+    padding-top: 3rem;
 }
 
 h1{
-    margin-left: 1.5rem;
+    margin-left: 0.8rem;
 }
 
 #logo{
-    height: 50px;
-    width: 60px;
+    height: 30px;
+    width: 40px;
+    margin-top: 0.5rem;
 
 }
 
@@ -39,7 +41,7 @@ h1{
 }
 
 #bntRegistrati{
-    background-color: #121089;
+    background-color: #1DA1F2; 
     color: white;
 }
 
@@ -58,6 +60,58 @@ h1{
 }
 
 #bntTweet{
-    background-color: #121089;
+    background-color: #1DA1F2;
     color: white;
+    margin-bottom: 1rem;
 }
+
+.mb-4{
+    text-align: center;
+}
+
+#logoUtente{
+    display: flex;
+    height: auto;
+    width: 60px;
+    border-radius: 45%;
+   
+
+}
+
+.UtenteCompleto{
+    display: flex;
+    position: absolute;
+    margin-left: 31rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    
+    
+}
+
+.UtenteCompleto p{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.UtenteCompleto img{
+    margin-right: 0.5rem;
+}
+
+.UtenteCompleto button{
+    height: 3rem;
+    margin-top: 0.3rem;
+}
+
+
+
+#post.d-none{
+    display: none;
+}
+
+.classeP{
+    background-color: #c0c3c848;
+    border-radius: 0.5rem;
+    border: 1px solid #1da0f2f7;
+    padding-left: 0.5rem;
+}
+

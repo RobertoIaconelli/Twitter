@@ -12,13 +12,17 @@
 
 <body>
 
+    <div class="UtenteCompleto">
+        <img src="./img/iconaUtente.jpg" alt="logo" id="logoUtente">
+        <p id="nomeUtenteRegistrato"></p>
+        <button class="btn d-block btn-outline-danger" id="btnLogout">Logout</button> 
 
+    </div>
     <div class="container">
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-12">
                 <form action="">
                     <div class="primaRiga">
-                        <img src="./img/logouccellino.jpg" alt="logo">
                         <img src="img/logo.png" alt="logoTwitter" id="logo">
                         <h1 class="mb-4">Inizia a Twittare</h1>
                     </div>
@@ -31,8 +35,9 @@
 
 
                     <button class="btn d-block ms-auto mt-3" id="bntTweet" type="button">Invia Tweet</button>
-                    <div id="post" class="postClass"></div>
-                    <button class="btn d-block" id="btnLogout">Logout</button> 
+                  
+                    <div id="post" class="postClass d-none"></div> 
+                    
             </div>
             </form>
         </div>
